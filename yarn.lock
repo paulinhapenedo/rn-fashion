@@ -5617,6 +5617,13 @@ react-devtools-core@^4.6.0:
     shell-quote "^1.6.1"
     ws "^7"
 
+react-hook-hooked@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-hook-hooked/-/react-hook-hooked-1.0.3.tgz#c5a8c0d8a30009c48d0ef68db8143c14273b6062"
+  integrity sha512-F21EwgRxCzp92XzPJ27uv4Iuj1D0V1h9Gl5Pt96XZDGnM+BriAh1ymYWMzjofiXedijQkyywcVCfpTU3rQPTyQ==
+  dependencies:
+    react "^16.8.6"
+
 react-is@^16.12.0, react-is@^16.13.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -5702,7 +5709,7 @@ react-test-renderer@16.13.1:
     react-is "^16.8.6"
     scheduler "^0.19.1"
 
-react@16.13.1:
+react@16.13.1, react@^16.8.6:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
