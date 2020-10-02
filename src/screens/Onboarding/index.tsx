@@ -9,7 +9,7 @@ import useOnboarding, {Hooked} from './hooks';
 import styles from './styles';
 
 const OnboardingScreen = ({backgroundColor, onScroll}: Hooked) => (
-  <View style={styles.container}>
+  <View style={styles.container} testID="welcome">
     <Animated.View style={[styles.slider, {backgroundColor}]}>
       <Animated.ScrollView
         horizontal

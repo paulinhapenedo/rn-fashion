@@ -16,13 +16,13 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNFashionTests.m */; };
 		3B239E914BF33199F033D8C2 /* libPods-RNFashion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA1DA3E506C73705ACE33ED /* libPods-RNFashion.a */; };
+		4259121F71824C25A16666A8 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8FB6C7580D75394B344F2A7D /* libPods-RNFashion-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB2DC36469458EE88842266 /* libPods-RNFashion-tvOSTests.a */; };
+		97E386C9739146CDA1C490DC /* SFProText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D02769A1665A4B5B90401284 /* SFProText-Regular.otf */; };
+		AA87F771D5854F8CB2FA1B15 /* SFProText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */; };
 		D1B640AC9B9D8A329ABE0EC4 /* libPods-RNFashion-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 459A52F80F11E4D56E86AF91 /* libPods-RNFashion-tvOS.a */; };
 		F197547BEB6D6E49AEC24A9E /* libPods-RNFashion-RNFashionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A810611EAE5306048BABA /* libPods-RNFashion-RNFashionTests.a */; };
-		AA87F771D5854F8CB2FA1B15 /* SFProText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */; };
-		97E386C9739146CDA1C490DC /* SFProText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D02769A1665A4B5B90401284 /* SFProText-Regular.otf */; };
-		4259121F71824C25A16666A8 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNFashion/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNFashion/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNFashion/main.m; sourceTree = "<group>"; };
+		14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.otf"; path = "../src/assets/fonts/SFProText-Bold.otf"; sourceTree = "<group>"; };
 		1B699B00DDCBBACA4015DFCE /* Pods-RNFashion-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNFashion-tvOSTests/Pods-RNFashion-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		244FCEA06A4902C00EC1F291 /* Pods-RNFashion-RNFashionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion-RNFashionTests.release.xcconfig"; path = "Target Support Files/Pods-RNFashion-RNFashionTests/Pods-RNFashion-RNFashionTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* RNFashion-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNFashion-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,16 +64,15 @@
 		6DA1DA3E506C73705ACE33ED /* libPods-RNFashion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFashion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNFashion/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB2DC36469458EE88842266 /* libPods-RNFashion-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFashion-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Semibold.otf"; path = "../src/assets/fonts/SFProText-Semibold.otf"; sourceTree = "<group>"; };
 		BC7A775307690AA3B4ED644C /* Pods-RNFashion-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNFashion-tvOSTests/Pods-RNFashion-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D02769A1665A4B5B90401284 /* SFProText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.otf"; path = "../src/assets/fonts/SFProText-Regular.otf"; sourceTree = "<group>"; };
 		D0D5DC66E995DA3387E83D7C /* Pods-RNFashion-RNFashionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion-RNFashionTests.debug.xcconfig"; path = "Target Support Files/Pods-RNFashion-RNFashionTests/Pods-RNFashion-RNFashionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D66BB70B42CC7272280573F0 /* Pods-RNFashion-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNFashion-tvOS/Pods-RNFashion-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E823042B5FDA671A382FDB68 /* Pods-RNFashion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion.debug.xcconfig"; path = "Target Support Files/Pods-RNFashion/Pods-RNFashion.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EF7BE1E570E5D6C9CE8CD090 /* Pods-RNFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFashion.release.xcconfig"; path = "Target Support Files/Pods-RNFashion/Pods-RNFashion.release.xcconfig"; sourceTree = "<group>"; };
-		14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */ = {isa = PBXFileReference; name = "SFProText-Bold.otf"; path = "../src/assets/fonts/SFProText-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D02769A1665A4B5B90401284 /* SFProText-Regular.otf */ = {isa = PBXFileReference; name = "SFProText-Regular.otf"; path = "../src/assets/fonts/SFProText-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */ = {isa = PBXFileReference; name = "SFProText-Semibold.otf"; path = "../src/assets/fonts/SFProText-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +155,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6DA29E5836014F6CA88EDCAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */,
+				D02769A1665A4B5B90401284 /* SFProText-Regular.otf */,
+				ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,20 +211,8 @@
 				1B699B00DDCBBACA4015DFCE /* Pods-RNFashion-tvOSTests.debug.xcconfig */,
 				BC7A775307690AA3B4ED644C /* Pods-RNFashion-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		6DA29E5836014F6CA88EDCAB /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				14A2F91D34B8495F812F0802 /* SFProText-Bold.otf */,
-				D02769A1665A4B5B90401284 /* SFProText-Regular.otf */,
-				ABC79A2A4D564BB090A729D2 /* SFProText-Semibold.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
