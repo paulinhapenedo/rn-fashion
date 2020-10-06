@@ -4,14 +4,14 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 
 interface SlideProps {
-  label: string;
+  title: string;
   right?: boolean;
 }
 
-const Slide = ({label, right}: SlideProps) => (
+const Slide = ({title, right}: SlideProps) => (
   <View style={styles.container}>
     <View style={styles.titleContainer(right)}>
-      <Text style={styles.title}>{label}</Text>
+      <Text style={styles.title}>{title}</Text>
     </View>
   </View>
 );

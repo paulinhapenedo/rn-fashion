@@ -1,7 +1,6 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import layouts from '../../styles/layouts';
-
-const {height} = Dimensions.get('window');
+import {screenHeight} from '../../utils/dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,7 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   slider: {
-    height: 0.61 * height,
+    height: 0.61 * screenHeight,
     borderBottomRightRadius: 55,
   },
   footer: {
@@ -20,6 +19,7 @@ const styles = StyleSheet.create({
   },
   content: {
     ...layouts.container,
+    flexDirection: 'row',
     backgroundColor: 'white',
     borderTopLeftRadius: 75,
   },
