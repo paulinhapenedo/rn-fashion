@@ -17,6 +17,7 @@ const OnboardingScreen = ({
   subslideStyle,
   scrollRef,
   ctaPress,
+  paginationAnimation,
 }: Hooked) => (
   <View style={styles.container} testID="welcome">
     <Animated.View style={[styles.slider, {backgroundColor}]}>
@@ -36,17 +37,27 @@ const OnboardingScreen = ({
     </Animated.View>
     <View style={styles.footer}>
       <Animated.View style={[styles.overlay, {backgroundColor}]} />
-      <Animated.View style={[styles.content, subslideStyle]}>
-        {slidesConfig.map((slide, i) => (
-          <Subslide
-            onPress={ctaPress(i)}
-            subtitle={slide.subtitle}
-            description={slide.description}
-            key={slide.subtitle}
-            last={i === slidesConfig.length - 1}
-          />
-        ))}
-      </Animated.View>
+      <View style={styles.content}>
+        <View style={styles.pagination}>
+          {slidesConfig.map((_, i) => (
+            <Animated.View
+              key={i}
+              style={[styles.paginationDot, paginationAnimation(i)]}
+            />
+          ))}
+        </View>
+        <Animated.View style={[subslideStyle]}>
+          {slidesConfig.map((slide, i) => (
+            <Subslide
+              onPress={ctaPress(i)}
+              subtitle={slide.subtitle}
+              description={slide.description}
+              key={slide.subtitle}
+              last={i === slidesConfig.length - 1}
+            />
+          ))}
+        </Animated.View>
+      </View>
     </View>
   </View>
 );

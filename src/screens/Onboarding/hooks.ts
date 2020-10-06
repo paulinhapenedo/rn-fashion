@@ -1,15 +1,18 @@
 import {useCallback, useRef} from 'react';
 import Animated, {
+  divide,
+  Extrapolate,
+  interpolate,
   interpolateColors,
   multiply,
   useValue,
 } from 'react-native-reanimated';
+import layouts from '../../styles/layouts';
 import {screenWidth} from '../../utils/dimensions';
 import {onScrollEvent} from '../../utils/onScrollEvent';
 
 const useOnboarding = () => {
   const x = useValue(0);
-  // TODO: useScrollEvent?
   const onScroll = onScrollEvent({x});
   const scrollRef = useRef<Animated.ScrollView>(null);
 
@@ -54,6 +57,8 @@ const useOnboarding = () => {
   });
 
   const subslideStyle = {
+    ...layouts.container,
+    ...layouts.flexRow,
     width: screenWidth * slidesConfig.length,
     transform: [{translateX: multiply(x, -1)}],
   };
@@ -69,6 +74,27 @@ const useOnboarding = () => {
     [],
   );
 
+  const paginationAnimation = (index: number) => {
+    const currentIndex = divide(x, screenWidth);
+
+    const opacity = interpolate(currentIndex, {
+      inputRange: [index - 1, index, index + 1],
+      outputRange: [0.5, 1, 0.5],
+      extrapolate: Extrapolate.CLAMP,
+    });
+
+    const scale = interpolate(currentIndex, {
+      inputRange: [index - 1, index, index + 1],
+      outputRange: [1, 1.25, 1],
+      extrapolate: Extrapolate.CLAMP,
+    });
+
+    return {
+      opacity,
+      transform: [{scale}],
+    };
+  };
+
   return {
     ctaPress,
     scrollRef,
@@ -76,6 +102,7 @@ const useOnboarding = () => {
     backgroundColor,
     slidesConfig,
     subslideStyle,
+    paginationAnimation,
   };
 };
 

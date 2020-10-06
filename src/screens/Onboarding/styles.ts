@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import layouts from '../../styles/layouts';
-import {screenHeight} from '../../utils/dimensions';
+import {screenHeight, screenWidth} from '../../utils/dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -19,9 +19,21 @@ const styles = StyleSheet.create({
   },
   content: {
     ...layouts.container,
-    flexDirection: 'row',
     backgroundColor: 'white',
     borderTopLeftRadius: 75,
+  },
+  pagination: {
+    ...layouts.over,
+    ...layouts.centered,
+    ...layouts.horizontalContainer,
+    height: 45,
+  },
+  paginationDot: {
+    width: 8,
+    height: 8,
+    backgroundColor: '#2cb9b0',
+    borderRadius: 4,
+    margin: 4,
   },
 });
 
