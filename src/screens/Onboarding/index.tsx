@@ -31,7 +31,12 @@ const OnboardingScreen = ({
         scrollEventThrottle={1}
         {...{onScroll}}>
         {slidesConfig.map((slide) => (
-          <Slide title={slide.title} right={slide.right} key={slide.title} />
+          <Slide
+            title={slide.title}
+            right={slide.right}
+            key={slide.title}
+            picture={slide.picture}
+          />
         ))}
       </Animated.ScrollView>
     </Animated.View>

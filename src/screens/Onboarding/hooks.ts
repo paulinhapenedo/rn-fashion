@@ -24,6 +24,7 @@ const useOnboarding = () => {
         "Confused about your outfits? Don't worry! Find the best of them",
       color: '#BFEAF5',
       right: false,
+      picture: require('../../assets/images/1.png'),
     },
     {
       title: 'Playful',
@@ -32,6 +33,7 @@ const useOnboarding = () => {
         'Hating the clothes in your wardrobe? Explore hundreds of outfits ideas',
       color: '#BEECC4',
       right: true,
+      picture: require('../../assets/images/2.png'),
     },
     {
       title: 'Excentric',
@@ -40,6 +42,7 @@ const useOnboarding = () => {
         'Create your individual & unique style and look amazing everyday',
       color: '#FFE4D9',
       right: false,
+      picture: require('../../assets/images/3.png'),
     },
     {
       title: 'Funky',
@@ -48,6 +51,7 @@ const useOnboarding = () => {
         'Discover the latest trends in fashion and explore your personality',
       color: '#FFDDDD',
       right: true,
+      picture: require('../../assets/images/4.png'),
     },
   ];
 

@@ -9,6 +9,17 @@ const styles = StyleSheet.create({
   container: {
     ...layouts.container,
     width: screenWidth,
+    overflow: 'hidden',
+  },
+  underlay: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'flex-end',
+  },
+  picture: {
+    ...StyleSheet.absoluteFillObject,
+    width: undefined,
+    height: undefined,
+    borderBottomRightRadius: 55,
   },
   titleContainer: (right: boolean) => ({
     justifyContent: 'center',
