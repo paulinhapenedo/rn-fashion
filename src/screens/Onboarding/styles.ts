@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
 import layouts from '../../styles/layouts';
-import {screenHeight, screenWidth} from '../../utils/dimensions';
+import colors from '../../theme/colors';
+import {screenHeight} from '../../utils/dimensions';
 
 const styles = StyleSheet.create({
   container: {
     ...layouts.container,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
   },
   slider: {
     height: 0.61 * screenHeight,
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
   },
   content: {
     ...layouts.container,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     borderTopLeftRadius: 75,
   },
   pagination: {
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   paginationDot: {
     width: 8,
     height: 8,
-    backgroundColor: '#2cb9b0',
+    backgroundColor: colors.primary,
     borderRadius: 4,
     margin: 4,
   },

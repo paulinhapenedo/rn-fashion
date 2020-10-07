@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import FONTS from '../../styles/fonts';
+
 import layouts from '../../styles/layouts';
 import {screenHeight, screenWidth} from '../../utils/dimensions';
 
@@ -30,13 +30,6 @@ const styles = StyleSheet.create({
       {rotate: right ? '-90deg' : '90deg'},
     ],
   }),
-  title: {
-    fontSize: 80,
-    lineHeight: 80,
-    fontFamily: FONTS.SFProText_BOLD,
-    color: 'white',
-    textAlign: 'center',
-  },
 });
 
 export default styles;

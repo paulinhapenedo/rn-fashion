@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Text, View} from 'react-native';
+import {ThemeContext} from '../../../theme';
 
 import Button from '../../Button';
 
@@ -9,20 +10,26 @@ interface SubslideProps {
   subtitle: string;
   description: string;
   last?: boolean;
-  onPress: (i: number) => void;
+  onPress: () => void;
 }
 
-const Subslide = ({description, subtitle, last, onPress}: SubslideProps) => (
-  <View style={styles.container}>
-    <Text style={styles.subtitle}>{subtitle}</Text>
-    <Text style={styles.description}>{description}</Text>
+const Subslide = ({description, subtitle, last, onPress}: SubslideProps) => {
+  const theme = useContext(ThemeContext);
 
-    <Button
-      onPress={onPress}
-      label={last ? "Let's get started" : 'Next'}
-      variant={last ? 'primary' : 'default'}
-    />
-  </View>
-);
+  return (
+    <View style={styles.container}>
+      <Text style={[theme.typography.title2, styles.subtitle]}>{subtitle}</Text>
+      <Text style={[theme.typography.body, styles.description]}>
+        {description}
+      </Text>
+
+      <Button
+        onPress={onPress}
+        label={last ? "Let's get started" : 'Next'}
+        variant={last ? 'primary' : 'default'}
+      />
+    </View>
+  );
+};
 
 export default Subslide;
